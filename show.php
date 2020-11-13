@@ -1,5 +1,6 @@
 <html>
 <head>
+<<<<<<< Updated upstream
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <title>ITF - work</title>
@@ -21,6 +22,9 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+=======
+<title>ITF Lab</title>
+>>>>>>> Stashed changes
 </head>
 <body>
 <?php
@@ -55,4 +59,8 @@ while($Result = mysqli_fetch_array($res))
 mysqli_close($conn);
 ?>
 </body>
+<<<<<<< Updated upstream
 </html>
+=======
+</html>
+>>>>>>> Stashed changes

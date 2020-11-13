@@ -1,7 +1,11 @@
 <?php
 
 $conn = mysqli_init();
+<<<<<<< Updated upstream
 mysqli_real_connect($conn, 'itflabdb.mysql.database.azure.com', 'thetimes@itflabdb', 'PooMlmp99', 'itflab', 3306);
+=======
+mysqli_real_connect($conn, 'panwit.mysql.database.azure.com', 'panwit@panwit', '123456789', 'itflab', 3306);
+>>>>>>> Stashed changes
 if (mysqli_connect_errno($conn))
 {
     die('Failed to connect to MySQL: '.mysqli_connect_error());
@@ -23,4 +27,8 @@ if (mysqli_query($conn, $sql)) {
   }
   
 mysqli_close($conn);
+<<<<<<< Updated upstream
 ?>
+=======
+?>
+>>>>>>> Stashed changes
