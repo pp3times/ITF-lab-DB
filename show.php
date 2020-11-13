@@ -1,6 +1,5 @@
 <html>
 <head>
-<<<<<<< Updated upstream
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <title>ITF - work</title>
@@ -22,11 +21,29 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
-=======
-<title>ITF Lab</title>
->>>>>>> Stashed changes
 </head>
 <body>
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center header-transparent">
+    <div class="container d-flex align-items-center">
+
+      <div class="logo mr-auto">
+        <h1 class="text-light"><a href="index.php"><span>ITFxBootstrap</span></a></h1>
+      </div>
+
+      <nav class="nav-menu d-none d-lg-block">
+        <ul>
+          <li class="active"><a href="index.php">Home</a></li>
+          <li><a href="index3.html">Layout</a></li>
+          <li><a href="sub-index.html">Cards</a></li>
+
+
+        </ul>
+      </nav><!-- .nav-menu -->
+
+    </div>
+  </header><!-- End Header -->
+  <!-- ======= Hero Section ======= -->
 <?php
 $conn = mysqli_init();
 mysqli_real_connect($conn, 'itflabdb.mysql.database.azure.com', 'thetimes@itflabdb', 'PooMlmp99', 'itflab', 3306);
@@ -59,8 +76,4 @@ while($Result = mysqli_fetch_array($res))
 mysqli_close($conn);
 ?>
 </body>
-<<<<<<< Updated upstream
 </html>
-=======
-</html>
->>>>>>> Stashed changes
