@@ -24,6 +24,15 @@
 </head>
 <body>
   <!-- ======= Header ======= -->
+<?php
+$conn = mysqli_init();
+mysqli_real_connect($conn, 'itflabdb.mysql.database.azure.com', 'thetimes@itflabdb', 'PooMlmp99', 'itflab', 3306);
+if (mysqli_connect_errno($conn))
+{
+    die('Failed to connect to MySQL: '.mysqli_connect_error());
+}
+$res = mysqli_query($conn, 'SELECT * FROM guestbook');
+?>
   <header id="header" class="fixed-top d-flex align-items-center header-transparent">
     <div class="container d-flex align-items-center">
 
@@ -44,15 +53,6 @@
     </div>
   </header><!-- End Header -->
   <!-- ======= Hero Section ======= -->
-<?php
-$conn = mysqli_init();
-mysqli_real_connect($conn, 'itflabdb.mysql.database.azure.com', 'thetimes@itflabdb', 'PooMlmp99', 'itflab', 3306);
-if (mysqli_connect_errno($conn))
-{
-    die('Failed to connect to MySQL: '.mysqli_connect_error());
-}
-$res = mysqli_query($conn, 'SELECT * FROM guestbook');
-?>
 <table width="600" border="1">
   <tr>
     <th width="100"> <div align="center">Name</div></th>
