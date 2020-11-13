@@ -1,4 +1,3 @@
-<<<<<<< Updated upstream
 <?php
 
 $conn = mysqli_init();
